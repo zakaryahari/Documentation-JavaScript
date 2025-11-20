@@ -40,3 +40,20 @@
     function addtwonum(a,b){
         return a+b;
     }
+
+//Types de Données:
+
+    //### Définition :
+
+    There are two types of data: 'Primitive Types' and 'Reference Types'. They are the types used by variables declared by the user.
+
+    //### Cas d'Utilisation :
+
+    --The Primitive is all of this: 'String', 'number', 'boolean', etc.
+    --The Reference Types is all of this: 'Object', 'Array', 'Functions'.
+    --typeof() is used to identify the type of the passed argument, to determine for us which type it is.
+
+    //Exemple :
+
+    typeof(exemple1); // it will return that it's a "number".
+    typeof(addtwonum); // it will return that it's a "function".
