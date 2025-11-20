@@ -57,3 +57,43 @@
 
     typeof(exemple1); // it will return that it's a "number".
     typeof(addtwonum); // it will return that it's a "function".
+
+//Instructions Conditionnelles :
+
+    //### Définition :
+
+    The Instructions Conditionnelles are used to check if a user has entered the right choice or for instructing the user, to avoid errors.
+
+    //### Cas d'Utilisation :
+
+    --if(): is used to verify a variable, to compare values, etc.
+    --else(): acts as a backup check; if the 'if' does not work, it will launch this block.
+    --switch: used instead of repeating the 'if' block many times, it applies the check on the argument passed.
+
+    //Exemple :
+
+    // For example to check if a is > then b:
+
+    if (a > b) {
+        console.log('yeah a is > then b');
+    } else {
+        console.log('a is < then b');
+    }
+
+    // For switch ex:
+
+    let number = 2;
+
+    switch (number) {
+        case 1:
+            console.log("One");
+            break;
+        case 2:
+            console.log("Two");
+            break;
+        case 3:
+            console.log("Three");
+            break;
+        default:
+            console.log("Number is not 1, 2, or 3");
+    }
