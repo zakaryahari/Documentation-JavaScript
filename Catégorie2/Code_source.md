@@ -86,3 +86,5 @@ document.createElement('div');
 
 // Fonction Display_Employee_list_SideBar pour ajouter un employé
     All_Employee_List.innerHTML += '<div class="list-employee" id=${employee.id}></div>';
+
+.
