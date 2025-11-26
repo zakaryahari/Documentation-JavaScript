@@ -58,3 +58,31 @@ element.addEventListener(type_evenement, fonction_a_executer);
     });
 
 //---
+
+//Création/Modification d'Éléments
+
+//### Définition :
+
+Ces méthodes permettent de construire et de modifier dynamiquement la structure HTML du document (le DOM) en injectant ou en manipulant des balises.
+
+//### Syntaxe :
+
+document.createElement('div');
+    parent.appendChild(enfant);
+    element.innerHTML = 'Nouveau Contenu';
+
+//Cas d'Utilisation :
+
+--createElement : Crée un nouvel élément (moins utilisé dans les exemples ci-dessous, car l'injection de chaîne de caractères est privilégiée pour la rapidité).
+
+--innerHTML : Permet de définir ou de remplacer le contenu HTML d'un élément. C'est idéal pour vider un conteneur ou injecter de grands blocs de code.
+    // Utilisé pour vider le conteneur des employés non assignés avant de le mettre à jour.
+    const All_Employee_List = document.getElementById('Display_Employee_list');
+    All_Employee_List.innerHTML = '';
+
+--insertAdjacentHTML / Concatenation += : Utilisé pour ajouter du HTML sans écraser le contenu existant. Ceci est utilisé pour insérer de nouveaux blocs d'expérience ou de nouveaux employés.
+    // Fonction Add_employee_experience pour ajouter un nouveau champ d'expérience
+    experiences_container.insertAdjacentHTML('beforeend', element_child);
+
+// Fonction Display_Employee_list_SideBar pour ajouter un employé
+    All_Employee_List.innerHTML += '<div class="list-employee" id=${employee.id}></div>';
